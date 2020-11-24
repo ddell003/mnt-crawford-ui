@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mnt-crawford-ui'`, () => {
+  it(`should have as title 'st-pauls'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('mnt-crawford-ui');
+    expect(app.title).toEqual('st-pauls');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('mnt-crawford-ui app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('st-pauls app is running!');
   });
 });
