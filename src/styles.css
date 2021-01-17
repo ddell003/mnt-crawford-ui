@@ -18,9 +18,12 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px; }
-
+h2{
+  color: #319199;
+  line-height: 1.3;
+  font-weight: 500;
+}
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -1578,3 +1581,38 @@ textarea:focus {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 0; }
+
+    .gray{
+      color: #719199;
+    }
+
+    .gold-bg{
+      background-color: #FCB94D;
+    }
+
+    .blue{
+      color: #319199;
+    }
+
+    .title{
+      font-family: "Acme";
+      color:white;
+      font-weight: 500;
+  }
+  .section-padding-50-0 {
+      padding-top: 50px;
+      padding-bottom: 0; }
+  .container{
+      font-family: "Acme", sans-serif, serif;
+  }
+  .h2 , h3, h4{
+      color: #319199;
+  }
+  p{
+      font-size: 18px;
+  }
+  .bulletList {
+      list-style: circle;
+      padding: 5px;
+      margin-left: 15px;
+  }
