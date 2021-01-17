@@ -1,0 +1,25 @@
+.title{
+    font-family: "Acme";
+    color:white;
+    font-weight: 500;
+}
+.section-padding-50-0 {
+    padding-top: 50px;
+    padding-bottom: 0; }
+.container{
+    font-family: "Acme", sans-serif, serif;
+}
+.h2 , h3, h4{
+    color: #319199;
+}
+p{
+    font-size: 18px;
+}
+.bulletList {
+    list-style: circle;
+    padding: 5px;
+    margin-left: 15px;
+}
+.connect-title:first-letter {
+text-transform:capitalize;
+}
