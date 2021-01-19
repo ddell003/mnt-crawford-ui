@@ -9,6 +9,18 @@ import { LandingComponent } from './landing/landing.component';
 import { WaterComponent } from './services/water/water.component';
 import { BidsComponent } from './bids/bids.component';
 import { EmergencyComponent } from './services/emergency/emergency.component';
+import { AnnouncementsComponent } from './announcements/announcements.component';
+import { FacilitiesComponent } from './services/facilities/facilities.component';
+import { TrashComponent } from './services/trash/trash.component';
+import { BuildingComponent } from './references/building/building.component';
+import { LicensesComponent } from './references/licenses/licenses.component';
+import { OrdinancesComponent } from './references/ordinances/ordinances.component';
+import { MapsComponent } from './references/maps/maps.component';
+import { PropertyTaxComponent } from './references/property-tax/property-tax.component';
+import { RealEstateTaxComponent } from './references/real-estate-tax/real-estate-tax.component';
+import { BoardComponent } from './directory/board/board.component';
+import { CouncilComponent } from './directory/council/council.component';
+import { AdministrationComponent } from './directory/administration/administration.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +30,19 @@ import { EmergencyComponent } from './services/emergency/emergency.component';
     LandingComponent,
     WaterComponent,
     BidsComponent,
-    EmergencyComponent
+    EmergencyComponent,
+    AnnouncementsComponent,
+    FacilitiesComponent,
+    TrashComponent,
+    BuildingComponent,
+    LicensesComponent,
+    OrdinancesComponent,
+    MapsComponent,
+    PropertyTaxComponent,
+    RealEstateTaxComponent,
+    BoardComponent,
+    CouncilComponent,
+    AdministrationComponent
   ],
   imports: [
     BrowserModule,
