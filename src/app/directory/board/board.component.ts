@@ -7,9 +7,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardComponent implements OnInit {
 
+  boards = [];
   constructor() { }
 
   ngOnInit(): void {
+
+    this.boards = [
+      {
+        name:"Mt. Crawford Planning Commission",
+        members:[
+          {name:"JC Smythers"},
+          {name:"Xan Stevens"},
+          {name:"Amy Taylor"},
+          {name:"Tasha Hoover"},
+          {name:"Claire Walsh"},
+        ]
+      },
+      {
+        name:"Mt. Crawford Board of Zoning Appeals",
+        members:[
+          {name:"Kathy Campbell"},
+          {name:"Bret Hart"},
+          {name:"John Overacker"},
+          {name:"Bobby Taylor"},
+        ]
+      },
+      {
+        name:"Economic Development Authority",
+        members:[
+          {name:"Robert Taylor"},
+          {name:"Leland Stevens"},
+          {name:"Angie Cook"},
+          {name:"Toni Ray"},
+        ]
+      }
+    ]
   }
 
 }

@@ -23,15 +23,8 @@
                     </h2>
 
                     <ul style="padding-left:15px" class="personnel">
-                        <li>Dennis Driver &#45; Mayor</li>
-                        <li>Shane Stevens &#45; Vice Mayor</li>
-                        <li>Neal Dillard &#45; Council Member</li>
-                        <li>Toni Ray &#45; Council Member</li>
-                        <li> Bobby Taylor &#45; Council Member</li>
-                        <li>JC Smythers &#45; Council Member</li>
+                        <li *ngFor="let user of townCouncil">{{user.name}} &#45; {{user.title}}</li>
                     </ul>
-
-
 
                     <h3 id="townHall">Town Council Meetings</h3>
                     <p>The Town Council meets on the second Monday of every month at 7:00 at the Town Hall 779 S. Main Street. </p>

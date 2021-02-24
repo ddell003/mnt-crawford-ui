@@ -14,40 +14,15 @@
     <div class="container">
 
         <div class="row">
-
             <div class="col-12 col-md-12 single-ministry mb-100">
                 <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2>Mt. Crawford Planning Commission</h2>
-
-                    <ul style="padding-left:15px">
-                        <li class="bulletList"> JC Smythers</li>
-                        <li class="bulletList"> Xan Stevens</li>
-                        <li class="bulletList">Amy Taylor</li>
-                        <li class="bulletList">Tasha Hoover</li>
-                        <li class="bulletList"> Claire Walsh</li>
-
-                    </ul>
-                    <h2>Mt. Crawford Board of Zoning Appeals</h2>
-
-                    <ul style="padding-left:15px">
-                        <li class="bulletList"> Kathy Campbell</li>
-                        <li class="bulletList"> Bret Hart</li>
-                        <li class="bulletList">John Overacker</li>
-                        <li class="bulletList"> Bobby Taylor</li>
-
-                    </ul>
-                    <h2>Economic Development Authority</h2>
-
-                    <ul style="padding-left:15px">
-                        <li class="bulletList">Robert Taylor</li>
-
-                        <li class="bulletList">Leland Stevens</li>
-                        <li class="bulletList"> Angie Cook</li>
-                        <li class="bulletList"> Toni Ray</li>
-
-                    </ul>
-
+                    <div class="boards" *ngFor="let board of boards">
+                        <h2>{{board.name}}</h2>
+                        <ul style="padding-left:15px">
+                            <li class="bulletList" *ngFor="let user of board.members"> {{user.name}}</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
                     <img src="../../../assets/img/town_w_mnt.jpg" alt="">

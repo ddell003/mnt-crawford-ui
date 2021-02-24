@@ -7,9 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CouncilComponent implements OnInit {
 
+  townCouncil = [];
   constructor() { }
 
   ngOnInit(): void {
+    this.setTownCouncil();
   }
+
+  setTownCouncil() {
+    /*
+     <li>Dennis Driver &#45; Mayor</li>
+                        <li>Shane Stevens &#45; Vice Mayor</li>
+                        <li>Neal Dillard &#45; Council Member</li>
+                        <li>Toni Ray &#45; Council Member</li>
+                        <li> Bobby Taylor &#45; Council Member</li>
+                        <li>JC Smythers &#45; Council Member</li>
+    */
+    this.townCouncil = [
+      {name:"Dennis Driver", title: "Mayor"},
+      {name:"Shane Stevens", title: "Vice Mayor"},
+      {name:"Neal Dillard", title: "Council Member"},
+      {name:"Toni Ray", title: "Council Member"},
+      {name:"Bobby Taylor", title: "Council Member"},
+      {name:"JC Smythers", title: "Council Member"},
+      {name:"Stacy Linthicum", title: "Council Member"},
+    ]
+
+  }
+
 
 }
