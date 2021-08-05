@@ -21,6 +21,7 @@ import { RealEstateTaxComponent } from './references/real-estate-tax/real-estate
 import { BoardComponent } from './directory/board/board.component';
 import { CouncilComponent } from './directory/council/council.component';
 import { AdministrationComponent } from './directory/administration/administration.component';
+import { HearingsComponent } from './hearings/hearings.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AdministrationComponent } from './directory/administration/administrati
     RealEstateTaxComponent,
     BoardComponent,
     CouncilComponent,
-    AdministrationComponent
+    AdministrationComponent,
+    HearingsComponent
   ],
   imports: [
     BrowserModule,

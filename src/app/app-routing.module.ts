@@ -16,6 +16,7 @@ import { EmergencyComponent } from './services/emergency/emergency.component';
 import { FacilitiesComponent } from './services/facilities/facilities.component';
 import { TrashComponent } from './services/trash/trash.component';
 import { WaterComponent } from './services/water/water.component';
+import {HearingsComponent} from "./hearings/hearings.component";
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'services/facilities', component: FacilitiesComponent},
   { path: 'services/trash', component: TrashComponent},
   { path: 'bids', component: BidsComponent},
+  { path: 'hearings', component: HearingsComponent},
   { path: 'announcements', component: AnnouncementsComponent},
 
   { path: 'references/building', component: BuildingComponent},
@@ -38,7 +40,7 @@ const routes: Routes = [
   { path: 'directory/council', component: CouncilComponent},
   { path: 'directory/administration', component: AdministrationComponent},
 
-  
+
 
 ];
 
