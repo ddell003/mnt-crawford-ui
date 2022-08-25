@@ -18,7 +18,7 @@ export class BoardComponent implements OnInit {
         members:[
           {name:"JC Smythers"},
           {name:"Xan Stevens"},
-          {name:"Amy Taylor"},
+          {name:"Jennifer Frederick"},
           {name:"Tasha Hoover"},
           {name:"Claire Walsh"},
         ]
@@ -37,7 +37,6 @@ export class BoardComponent implements OnInit {
         members:[
           {name:"Robert Taylor"},
           {name:"Leland Stevens"},
-          {name:"Angie Cook"},
           {name:"Toni Ray"},
         ]
       }
