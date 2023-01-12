@@ -24,9 +24,8 @@ export class CouncilComponent implements OnInit {
                         <li>JC Smythers &#45; Council Member</li>
     */
     this.townCouncil = [
-      {name:"Dennis Driver", title: "Mayor"},
+      {name:"Neal Dillard", title: "Mayor"},
       {name:"Shane Stevens", title: "Vice Mayor"},
-      {name:"Neal Dillard", title: "Council Member"},
       {name:"Toni Ray", title: "Council Member"},
       {name:"Bobby Taylor", title: "Council Member"},
       {name:"JC Smythers", title: "Council Member"},
