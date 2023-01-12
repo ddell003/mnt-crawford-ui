@@ -22,6 +22,8 @@ import { BoardComponent } from './directory/board/board.component';
 import { CouncilComponent } from './directory/council/council.component';
 import { AdministrationComponent } from './directory/administration/administration.component';
 import { HearingsComponent } from './hearings/hearings.component';
+import { NewsComponent } from './news/news.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { HearingsComponent } from './hearings/hearings.component';
     BoardComponent,
     CouncilComponent,
     AdministrationComponent,
-    HearingsComponent
+    HearingsComponent,
+    NewsComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,
