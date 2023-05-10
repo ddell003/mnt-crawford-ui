@@ -30,6 +30,7 @@ export class CouncilComponent implements OnInit {
       {name:"Bobby Taylor", title: "Council Member"},
       {name:"JC Smythers", title: "Council Member"},
       {name:"Tasha Hoover", title: "Council Member"},
+      {name:"Kathleen Campbell", title: "Council Member"},
     ]
 
   }
