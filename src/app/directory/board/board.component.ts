@@ -19,7 +19,7 @@ export class BoardComponent implements OnInit {
           {name:"JC Smythers"},
           {name:"Xan Stevens"},
           {name:"Jennifer Frederick"},
-          {name:"Tasha Hoover"},
+          {name:"Chris Campbell"},
           {name:"Claire Walsh"},
         ]
       },
