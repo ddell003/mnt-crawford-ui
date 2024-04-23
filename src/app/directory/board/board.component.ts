@@ -16,7 +16,7 @@ export class BoardComponent implements OnInit {
       {
         name:"Mt. Crawford Planning Commission",
         members:[
-          {name:"JC Smythers"},
+          {name:"Tasha Hoover"},
           {name:"Xan Stevens"},
           {name:"Jennifer Frederick"},
           {name:"Chris Campbell"},
