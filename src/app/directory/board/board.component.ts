@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import jsonBoards from '../../../assets/content/directory.json'
 
 @Component({
   selector: 'app-board',
@@ -12,35 +13,8 @@ export class BoardComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.boards = [
-      {
-        name:"Mt. Crawford Planning Commission",
-        members:[
-          {name:"Tasha Hoover"},
-          {name:"Xan Stevens"},
-          {name:"Jennifer Frederick"},
-          {name:"Chris Campbell"},
-          {name:"Claire Walsh"},
-        ]
-      },
-      {
-        name:"Mt. Crawford Board of Zoning Appeals",
-        members:[
-          {name:"Kathy Campbell"},
-          {name:"Bret Hart"},
-          {name:"John Overacker"},
-          {name:"Bobby Taylor"},
-        ]
-      },
-      {
-        name:"Economic Development Authority",
-        members:[
-          {name:"Robert Taylor"},
-          {name:"Leland Stevens"},
-          {name:"Toni Ray"},
-        ]
-      }
-    ]
+    console.log('board json', jsonBoards);
+    this.boards = jsonBoards.board_commissions.boards;
   }
 
 }

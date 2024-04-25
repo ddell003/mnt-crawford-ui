@@ -24,10 +24,9 @@
 
                     <h2>Administrative Contacts</h2>
                     <ul class="personnel">
-                        <li>Libby Clark &#45; Town Manager, Treasurer/Clerk &#45; (540) 421&#45;0856</li>
-                        <li> Jason May, Deputy Town Manager</li>
-                        <li>  Royce Hylton, Zoning Administrator</li>
-                        <li> Nathan Miller, Town Attorney</li>
+                      <li class="bulletList" *ngFor="let user of admins">
+                        {{user.name}} - {{user.role}}{{(user.email !=="")? ' - '+user.email:''}}{{(user.phone !=="")? ' - '+user.phone:''}}
+                      </li>
 
                     </ul>
 

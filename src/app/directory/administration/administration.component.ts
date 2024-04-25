@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import jsonBoards from '../../../assets/content/directory.json'
 
 @Component({
   selector: 'app-administration',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdministrationComponent implements OnInit {
 
+  admins = [];
+
   constructor() { }
 
   ngOnInit(): void {
+    this.admins = jsonBoards.town_admin.members;
   }
 
 }

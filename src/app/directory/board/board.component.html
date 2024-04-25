@@ -18,7 +18,7 @@
                 <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="boards" *ngFor="let board of boards">
-                        <h2>{{board.name}}</h2>
+                        <h2>{{board.board_name}}</h2>
                         <ul style="padding-left:15px">
                             <li class="bulletList" *ngFor="let user of board.members"> {{user.name}}</li>
                         </ul>
