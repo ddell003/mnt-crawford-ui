@@ -39,7 +39,7 @@
       {"name":  "Shane Stevens", "role":  "Vice Mayor"},
       {"name":  "Toni Ray", "role":  "Council Member"},
       {"name":  "Bobby Taylor", "role":  "Council Member"},
-      {"name":  "JC Smythers", "role":  "Council Member"},
+      {"name":  "Dennis Driver", "role":  "Council Member"},
       {"name":  "Tasha Hoover", "role":  "Council Member"},
       {"name":  "Kathleen Campbell", "role":  "Council Member"}
     ],
@@ -51,7 +51,7 @@
       {
         "title": "Town Hall",
         "paragraphs": [
-          "Town Hall hours Tuesday and Thursday 10am-5pm",
+          "Town Hall hours Tuesday and Thursday 9am-4pm",
           "Other times available by appointment by calling (540)421-0856"
           ]
       }
@@ -63,7 +63,7 @@
       {"name":  "Libby Clark", "role":  "Town Manager, Treasurer/Clerk", "email": "", "phone": "(540) 421-0856"},
       {"name":  "Jason May", "role":  "Deputy Town Manager", "email": "", "phone": ""},
       {"name":  "Royce Hylton", "role":  "Zoning Administrator", "email": "", "phone": ""},
-      {"name":  "Nathan Miller", "role":  "Town Attorney", "email": "", "phone": ""},
+      {"name":  "Michael Helm", "role":  "Town Attorney", "email": "", "phone": ""},
       {"name":  "Parker Dell ", "role":  "Website Administrator", "email": "parkerdell94@gmail.com.", "phone": ""}
     ]
   }
