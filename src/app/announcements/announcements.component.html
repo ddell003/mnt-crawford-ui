@@ -18,27 +18,22 @@
             <div class="col-12 col-md-12 single-ministry mb-100">
                 <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2>Announcements / Upcoming meetings</h2>
+                    <h2>{{title}}</h2>
 
                     <ul style="padding-left:15px">
-                        <!--<li class="bulletList">  Upcoming Public Hearings 3/8/2021 <a href="../../assets/documents/COLDSTREAM FARM REZONING PH NOTICE 2.docx" target="blank" class="btn btn-info">More Info</a></li>-->
-<!--                        <li class="bulletList">  Work Session 9/20/2021 <a href="https://drive.google.com/file/d/1hMHiM4SfpMI1uBYxom9pdz7Ine2y2SF1/view?usp=sharing" target="blank" class="btn btn-info">More Info</a></li>-->
-                      <!--<li class="bulletList">
-                        <strong>Mount Crawford Comprehensive Plan </strong>
-                        <p>The Town Planning Commission is developing a Comprehensive Plan that will help guide planning for the next 10-20 years in Mount Crawford. Help us understand your vision for the future of Mount Crawford by participating in our public input opportunities! There are multiple ways to get involved:</p>
-                        <p><strong>Let your voice be heard by completing our public input survey</strong> The survey will be available online through May 31st. You can access the survey at the following link: <a href="https://jmu.co1.qualtrics.com/jfe/form/SV_3EqDbBu2wmqhbng" target="_blank">www.tinyurl.com/mtcrawfordplan </a></p>
-                        <p><strong>Attend one of our Open Houses</strong>Members of the planning commission will be available at two Open House events scheduled in the month of May. These events are open to the public. We invite you to come to Town Hall, or the Ruritan Club on the dates below to learn more about the planning process, and to provide your input, through hands-on activities, to tell us your priorities for the future of Mount Crawford! </p>
-                        <p>Saturday, May 14, 2022 from 10:00 am – 12:00 pm at Mount Crawford Town Hall</p>
-                        <p>Thursday, May 19, 2022 from 6:30 – 8:30 pm  at Mount Crawford Ruritan Club</p>
-                        <p><strong>Win Prizes!</strong>
-                          Complete the survey and/or attend one of the Open Houses to have your name entered to win a $50 Visa Gift Card. There will be multiple prize drawings. Double your chances to win by completing the survey AND attending an open house. Your name will be entered for each activity you participate in.  Drawing will take place in June when the survey period is complete. </p>
-                      <p>If you have any questions, contact Libby Clark, Town Manager.</p>
-                      </li>-->
-                      <li class="bulletList">  The Town Payment Portal has a new url, please use <a href="https://mountcrawford.info/" target="blank" class="btn btn-info">https://mountcrawford.info</a></li>
+                      <li class="bulletList" *ngFor="let event of events">
+                        <h5 class="text-primary">{{event.name}}</h5>
+                        <p *ngIf="event.date != ''">{{event.date}}</p>
+                        <div *ngFor="let p of event.text">
+                          <p>{{p}}</p>
+                        </div>
+                        <div style="display: flex">
+                          <div *ngFor="let btn of event.buttons" style="margin-left: 3px">
+                            <a [href]="btn.link" target="_blank" [class]="'btn btn-'+btn.color">{{btn.title}}</a>
+                          </div>
+                        </div>
 
-
-
-
+                      </li>
                     </ul>
 
                 </div>

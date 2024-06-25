@@ -1,0 +1,174 @@
+{
+  "events": {
+    "page_name": "Upcoming Events",
+    "events": [
+      {
+        "name": "Example Event Do not remove",
+        "date": "Sat. May 25, 2024, from 8am-2pm",
+        "buttons": [
+          {
+            "title": "Fill out the vendor form",
+            "link": "/assets/documents/SUMMERFEST_APPLICATION.pdf"
+          },
+          {
+            "title": "Click for mor info",
+            "link": "https://google.com"
+          }
+        ],
+        "text": [
+            "line 1 text",
+            "line 2 text"
+        ]
+      },
+      {
+        "name": "Summer Festival Vendor Application ",
+        "date": "Sat. May 25, 2024, from 8am-2pm",
+        "buttons": [
+          {
+            "title": "Fill out the vendor form",
+            "link": "/assets/documents/SUMMERFEST_APPLICATION.pdf"
+          }
+        ],
+        "text": [
+
+        ]
+      },
+      {
+        "name": "Honor Local Veterans",
+        "date": "",
+        "buttons": [
+
+        ],
+        "text": [
+          "The Town Council would like to honor our local Veterans. If you or a family member live in Mount Crawford and are a Veteran of the Armed Forces, please send the name and military branch along with your water bill payment or email: townofmountcrawford@gmail.com"
+        ]
+      },
+      {
+        "name": "1825-2025 Bicentennial Celebration",
+        "date": "",
+        "buttons": [
+
+        ],
+        "text": [
+          "The Town is forming a Historical Committee to help gather information for Main Street to become a Historic District as well as to prepare for the Bicentennial Celebration of Mount Crawford. If you would be interested in serving on this committee, or have photos you would be willing to have copied, or historic relics you would loan the town for the celebration, please call or text: (540) 421-0856 or email: townofmountcrawford@gmail.com"
+        ]
+      }
+    ]
+  },
+  "hearings": {
+    "page_name": "Current Hearings",
+    "events": [
+      {
+        "name": "Example Hearing",
+        "date": "Sat. May 25, 2024, from 8am-2pm",
+        "buttons": [
+          {
+            "title": "Fill out the vendor form",
+            "link": "/assets/documents/SUMMERFEST_APPLICATION.pdf",
+            "color": "info"
+          },
+          {
+            "title": "Click for mor info",
+            "link": "https://google.com",
+            "color": "primary"
+          },
+          {
+            "title": "Click for mor info",
+            "link": "https://google.com",
+            "color": "success"
+          }
+        ],
+        "text": [
+          "line 1 text",
+          "line 2 text"
+        ]
+      }
+    ]
+  },
+  "notices": {
+    "page_name": "Announcements / Upcoming meetings",
+    "events": [
+      {
+        "name": "Example Notice",
+        "date": "Sat. May 25, 2024, from 8am-2pm",
+        "buttons": [
+          {
+            "title": "Fill out the vendor form",
+            "link": "/assets/documents/SUMMERFEST_APPLICATION.pdf",
+            "color": "info"
+          },
+          {
+            "title": "Click for mor info",
+            "link": "https://google.com",
+            "color": "primary"
+          },
+          {
+            "title": "Click for mor info",
+            "link": "https://google.com",
+            "color": "success"
+          }
+        ],
+        "text": [
+          "line 1 text",
+          "line 2 text"
+        ]
+      },
+      {
+        "name": "The Town Payment Portal has a new url, please use",
+        "date": "",
+        "buttons": [
+          {
+            "title": "https://mountcrawford.info/",
+            "link": "https://mountcrawford.info/",
+            "color": "info"
+          }
+        ],
+        "text": [
+        ]
+      }
+    ]
+  },
+  "bids": {
+    "page_name": "Current Bids",
+    "events": [
+      {
+        "name": "Example Bids",
+        "date": "Sat. May 25, 2024, from 8am-2pm",
+        "buttons": [
+          {
+            "title": "Fill out the vendor form",
+            "link": "/assets/documents/SUMMERFEST_APPLICATION.pdf",
+            "color": "info"
+          },
+          {
+            "title": "Click for mor info",
+            "link": "https://google.com",
+            "color": "primary"
+          },
+          {
+            "title": "Click for mor info",
+            "link": "https://google.com",
+            "color": "success"
+          }
+        ],
+        "text": [
+          "line 1 text",
+          "line 2 text"
+        ]
+      },
+      {
+        "name": "RFP Park Bid",
+        "date": "",
+        "buttons": [
+          {
+            "title": "Form",
+            "link": "assets/documents/RFP-May.pdf",
+            "color": "info"
+          }
+        ],
+        "text": [
+        ]
+      }
+    ]
+  }
+}

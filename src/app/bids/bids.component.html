@@ -21,7 +21,19 @@
                     <h2>Current Bids</h2>
                     <p>Click on the links to view!</p>
                    <ul style="padding-left:15px">
-                        <li class="bulletList">  <a  class="text-primary" href="assets/documents/RFP-May.pdf" width="800px" height="2100px" target="_blank">RFP Park Bid</a></li>
+                     <li class="bulletList" *ngFor="let event of events">
+                       <h5 class="text-primary">{{event.name}}</h5>
+                       <p *ngIf="event.date != ''">{{event.date}}</p>
+                       <div *ngFor="let p of event.text">
+                         <p>{{p}}</p>
+                       </div>
+                       <div style="display: flex">
+                         <div *ngFor="let btn of event.buttons" style="margin-left: 3px">
+                           <a [href]="btn.link" target="_blank" [class]="'btn btn-'+btn.color">{{btn.title}}</a>
+                         </div>
+                       </div>
+
+                     </li>
 
                     </ul>
 

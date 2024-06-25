@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import jsonBoards from '../../../assets/content/directory.json'
+import jsonBoards from '../../../assets/content/directory.json';
 
 @Component({
   selector: 'app-council',
@@ -9,6 +9,7 @@ import jsonBoards from '../../../assets/content/directory.json'
 export class CouncilComponent implements OnInit {
 
   townCouncil = [];
+  sections = [];
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +18,7 @@ export class CouncilComponent implements OnInit {
 
   setTownCouncil(): void {
     this.townCouncil = jsonBoards.town_council.members;
+    this.sections = jsonBoards.town_council.sections;
   }
 
 

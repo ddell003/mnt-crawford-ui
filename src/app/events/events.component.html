@@ -18,40 +18,23 @@
       <div class="col-12 col-md-12 single-ministry mb-100">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h2>Upcoming Events</h2>
+            <h2>{{title}}</h2>
             <p>Click on the links to view!</p>
             <ul style="padding-left:15px">
-              <!--              <li class="bulletList">-->
-              <!--                <a  class="text-primary" href="../../assets/documents/FOXHILL-11-14.pdf" width="800px" height="2100px" target="_blank">-->
-              <!--                  <strong>[Canceled] </strong>Cold Stream Farm Hearing - November 14, 2022 at 7pm</a><br>-->
-              <!--                Additional Docs - -->
-              <!--                <a class="text-primary" href="../../assets/documents/coldstream-2022-09/Coldstream-letter.pdf" width="800px" height="2100px" target="_blank">Cold Stream Letter</a>,-->
-              <!--                <a class="text-primary" href="../../assets/documents/coldstream-2022-09/Coldstream-Permit.pdf" width="800px" height="2100px" target="_blank">Cold Stream Permit</a>,-->
-              <!--                <a class="text-primary" href="../../assets/documents/coldstream-2022-09/Coldstream-map.pdf" width="800px" height="2100px" target="_blank">Map</a>-->
-              <!--              </li>-->
-                            <li class="bulletList">
-                              <p>
-                                <strong class="text-primary">Summer Festival Vendor Application </strong> Sat. May 25, 2024, from 8am-2pm<br>
-                                <br>
-                                <a href="assets/documents/SUMMERFEST_APPLICATION.pdf" target="_blank" class="btn btn-info">Fill out the vendor form now</a>
-                              </p>
-                            </li>
-                          <li class="bulletList">
-                            <p>
-                              <strong class="text-primary">Honor Local Veterans</strong><br>
-                              <br>
-                              The Town Council would like to honor our local Veterans. If you or a family member live in Mount Crawford and are a Veteran of the Armed Forces, please send the name and military branch along with your water bill payment or email: townofmountcrawford@gmail.com
-                            </p>
-                          </li>
-              <li class="bulletList">
-                <p>
-                  <strong class="text-primary">1825-2025 Bicentennial Celebration </strong><br>
-                  <br>
-                  The Town is forming a Historical Committee to help gather information for Main Street to become a Historic District as well as to prepare for the Bicentennial Celebration of Mount Crawford.
-                  If you would be interested in serving on this committee, or have photos you would be willing to have copied, or historic relics you would loan the town for the celebration, please call or text: (540) 421-0856 or email: townofmountcrawford@gmail.com
-                </p>
-              </li>
 
+              <li class="bulletList" *ngFor="let event of events">
+                <h5 class="text-primary">{{event.name}}</h5>
+                <p *ngIf="event.date != ''">{{event.date}}</p>
+                <div *ngFor="let p of event.text">
+                  <p>{{p}}</p>
+                </div>
+                <div style="display: flex">
+                  <div *ngFor="let btn of event.buttons" style="margin-left: 3px">
+                    <a [href]="btn.link" target="_blank" class="btn btn-info">{{btn.title}}</a>
+                  </div>
+                </div>
+
+              </li>
             </ul>
 
           </div>

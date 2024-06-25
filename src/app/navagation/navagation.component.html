@@ -45,13 +45,13 @@
                         <div class="classynav">
                             <ul>
 
-                                <li><a routerLink="/bids">Bids (1)</a></li>
-                              <li><a href="#">Announcements (1)</a>
+                                <li><a routerLink="/bids">Bids ({{bidCount}})</a></li>
+                              <li><a href="#">Announcements ({{totalAnnouncements}})</a>
                                 <ul class="dropdown" style="width:200px;">
-                                  <li><a routerLink="/events">Events (1)</a></li>
-                                  <li><a routerLink="/hearings">Hearings (0)</a></li>
+                                  <li><a routerLink="/events">Events ({{eventCount}})</a></li>
+                                  <li><a routerLink="/hearings">Hearings ({{hearingsCount}})</a></li>
                                   <li><a routerLink="/news">News</a></li>
-                                  <li><a routerLink="/announcements">Notices</a></li>
+                                  <li><a routerLink="/announcements">Notices ({{noticeCount}})</a></li>
                                 </ul>
                               </li>
                                 <li><a href="#">Services</a>
