@@ -21,12 +21,12 @@
         ]
       },
       {
-        "name": "Fall Festival Vendor Application ",
-        "date": "Sat. Sep 21, 2024, from 9am-2pm",
+        "name": "Summerfest Vendor Application ",
+        "date": "Sat. May 31, 2025, from 9am-1pm",
         "buttons": [
           {
             "title": "Fill out the vendor form",
-            "link": "/assets/documents/FALL_FESTIVAL_APPLICATION.pdf"
+            "link": "https://drive.google.com/file/d/1NW2BJrIPnwXNoFLpLfCzfnJlKFRRGiQ7/view?usp=sharing"
           }
         ],
         "text": [
@@ -84,18 +84,13 @@
         ]
       },
       {
-        "name": "Public Notice ADOPTION OF CIGARETTE TAX",
-        "date": "September 9, 2024, @7:00 p.m",
+        "name": "2025-26 Budget hearing",
+        "date": "TBD, @7:00 p.m",
         "buttons": [
 
         ],
         "text": [
-          "TOWN OF MOUNT CRAWFORD ADOPTION OF CIGARETTE TAX",
-          "The Town Council of Mount Crawford, Virginia gives notice of its intent to adopt a new ordinance of the Town of Mount Crawford Code, enacting a cigarette tax, at its regular meeting on September 9, 2024, beginning at 7:00 p.m. at the Town of Mount Crawford Municipal Building, 779 South Main Street, Mount Crawford, Virginia.",
-          "Pursuant to authority granted in Sections 58.1-3830 and 58.1-3832 of the Code of Virginia (1950), as amended, the proposed ordinance will enact a cigarette tax in the amount of up to $0.02 per cigarette sold",
-          "It is proposed this tax be effective January 1, 2025",
-          "The proposed ordinance is available for review in the Office of the Town Manager, 779 South Main Street, during regular business hours and on the town website: https://mountcrawford.us/",
-          "By order of the Mount Crawford Town Council 8/21, 8/28"
+         
         ]
       }
     ]
@@ -169,19 +164,6 @@
         "text": [
           "line 1 text",
           "line 2 text"
-        ]
-      },
-      {
-        "name": "RFP Park Bid",
-        "date": "",
-        "buttons": [
-          {
-            "title": "Form",
-            "link": "assets/documents/RFP-May.pdf",
-            "color": "info"
-          }
-        ],
-        "text": [
         ]
       }
     ]
