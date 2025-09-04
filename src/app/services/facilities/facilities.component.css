@@ -1,3 +1,12 @@
 h3{
     color: #719199;
 }
+
+.list{
+  margin-left: 25px;
+}
+.list li{
+  list-style: circle;
+  font-size: 16px;
+  color: #5a5a5a;
+}
