@@ -7,6 +7,10 @@ h3{
 }
 .list li{
   list-style: circle;
-  font-size: 16px;
   color: #5a5a5a;
+}
+
+.renting-days p{
+  margin-bottom: 0;
+  margin-left: 2rem;
 }
