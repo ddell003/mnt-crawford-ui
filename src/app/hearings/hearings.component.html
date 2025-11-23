@@ -27,8 +27,8 @@
                 <div *ngFor="let p of event.text">
                   <p>{{p}}</p>
                 </div>
-                <div style="display: flex">
-                  <div *ngFor="let btn of event.buttons" style="margin-left: 3px">
+                <div style="display: flex; flex-wrap: wrap">
+                  <div *ngFor="let btn of event.buttons" style="margin-left: 3px; margin-bottom: 3px">
                     <a [href]="btn.link" target="_blank" [class]="'btn btn-'+btn.color">{{btn.title}}</a>
                   </div>
                 </div>
