@@ -96,69 +96,6 @@
           "line 1 text",
           "line 2 text"
         ]
-      },
-      {
-        "name": "2025 Ordinances",
-        "date": "December 8, 2025",
-        "buttons": [
-          {
-            "title": "1 ORDINANCE Notice for Public Hearing",
-            "link": "https://drive.google.com/file/d/1FTR6bdknV7jA--EnOZRrsC59e2c9Ro-q/view?usp=sharing",
-            "color": "primary"
-          },
-          {
-            "title": "CHAPTER 30 BUSINESSES",
-            "link": "https://drive.google.com/file/d/1wmdR9FqltjkRZ7q41Dj2-8--y79R-7Wp/view?usp=drive_link",
-            "color": "primary"
-          },
-          {
-            "title": "Chapter 35 - Animals",
-            "link": "https://drive.google.com/file/d/1nfK6D2yiIzg6dOV_NQpyPjgjKeM8O4wZ/view?usp=drive_link",
-            "color": "primary"
-          },
-          {
-            "title": "Chapter 50 Taxation",
-            "link": "https://drive.google.com/file/d/1Qh9Yv-zyc6Q4QRwRMjYqNBR2TSaj7bWS/view?usp=drive_link",
-            "color": "primary"
-          },
-          {
-            "title": "CHAPTER 62 PLANNING",
-            "link": "https://drive.google.com/file/d/166qQWYzrOZBG9Nf8bh1JQ8qKpK543KiI/view?usp=drive_link",
-            "color": "primary"
-          },
-          {
-            "title": "Chapter 170 Article 6 - Signs",
-            "link": "https://drive.google.com/file/d/1bAQHY1lmFAwUlxNMkiRe-O5d-1Tn18_j/view?usp=drive_link",
-            "color": "primary"
-          },{
-            "title": "CHAPTER 170 ZONING",
-            "link": "https://drive.google.com/file/d/14BKjeKmAtJ85t6NLSBggoShTlMBRO6Cl/view?usp=drive_link",
-            "color": "primary"
-          },{
-            "title": "Chapter 170 Zoning^J Article 7 - Administration and Enforcement",
-            "link": "https://drive.google.com/file/d/1hFECK_KXXSvbpgZVXDnqasq7l5OFsmep/view?usp=drive_link",
-            "color": "primary"
-          },{
-            "title": "LAW ENFORCEMENT CH 54",
-            "link": "https://drive.google.com/file/d/16i_Ocq14KuGzab3mGZWBnpkhuZkuVBFm/view?usp=drive_link",
-            "color": "primary"
-          },{
-            "title": "ORDINANCE TO ADOPT",
-            "link": "https://drive.google.com/file/d/1J2l_ry78OCnGrhs3hREOTarbdS2tPTbm/view?usp=drive_link",
-            "color": "primary"
-          },{
-            "title": "PART 1 ADMIN OF GOV",
-            "link": "https://drive.google.com/file/d/1kUDYnEDd6IEFot33-pUGWC_aLy0Vp4KL/view?usp=drive_link",
-            "color": "primary"
-          },{
-            "title": "TRAFFIC 150",
-            "link": "https://drive.google.com/file/d/1XSz7ExHEZ521Hk9cvaIm2UXDGywwnJFG/view?usp=drive_link",
-            "color": "primary"
-          }
-        ],
-        "text": [
-
-        ]
       }
     ]
   },

@@ -22,37 +22,41 @@
                     <p>Click on the links to view!</p>
                     <ul style="padding-left:15px">
                         <!--<li class="bulletList">  <a  class="text-primary" href="../../assets/documents/RFP Surveying.pdf" width="800px" height="2100px" target="_blank">RFP Surveying</a></li>-->
-                        <li class="bulletList">
-                            <a  class="text-primary" href="../../assets/documents/NOISE-ORDINANCE-2019.pdf" width="800px" height="2100px" target="_blank">Noise Ordinance</a>
-                        </li>
-                        <li class="bulletList">
-                            <a  class="text-primary" href="../../assets/documents/Nuisance%20Ordinance.pdf" width="800px" height="2100px" target="_blank">Nuisance Ordinance</a>
-                        </li>
-                        <li class="bulletList">
-                            <a  class="text-primary" href="../../assets/documents/SUBDIVISION_ORDINANCE.pdf" width="800px" height="2100px" target="_blank">Subdivision Ordinance</a>
-                        </li>
-                        <li class="bulletList">
-                            <a  class="text-primary" href="../../assets/documents/ORDINANCE_SEWER_WATER_SERVICE.pdf" width="800px" height="2100px" target="_blank">Sewer and Water Service and rates Ordinance</a>
-                        </li>
-                        <li class="bulletList">
-                            <a  class="text-primary" href="https://drive.google.com/file/d/1atpgfogEmcmUB3i43OVOsNoJWKfnIV72/view?usp=sharingf" width="800px" height="2100px" target="_blank">
-                              Transient Tax Ordinance
-                            </a>
-                        </li>
-                      <li class="bulletList">
-                        <a  class="text-primary" href="https://drive.google.com/file/d/1yhp5vkiYmSYsm6GezLM5WCPeLCL41IhJ/view?usp=sharing" width="800px" height="2100px" target="_blank">
-                          Transient Tax Form
-                        </a>
+<!--                        <li class="bulletList">-->
+<!--                            <a  class="text-primary" href="../../assets/documents/NOISE-ORDINANCE-2019.pdf" width="800px" height="2100px" target="_blank">Noise Ordinance</a>-->
+<!--                        </li>-->
+<!--                        <li class="bulletList">-->
+<!--                            <a  class="text-primary" href="../../assets/documents/Nuisance%20Ordinance.pdf" width="800px" height="2100px" target="_blank">Nuisance Ordinance</a>-->
+<!--                        </li>-->
+<!--                        <li class="bulletList">-->
+<!--                            <a  class="text-primary" href="../../assets/documents/SUBDIVISION_ORDINANCE.pdf" width="800px" height="2100px" target="_blank">Subdivision Ordinance</a>-->
+<!--                        </li>-->
+<!--                        <li class="bulletList">-->
+<!--                            <a  class="text-primary" href="../../assets/documents/ORDINANCE_SEWER_WATER_SERVICE.pdf" width="800px" height="2100px" target="_blank">Sewer and Water Service and rates Ordinance</a>-->
+<!--                        </li>-->
+<!--                        <li class="bulletList">-->
+<!--                            <a  class="text-primary" href="https://drive.google.com/file/d/1atpgfogEmcmUB3i43OVOsNoJWKfnIV72/view?usp=sharingf" width="800px" height="2100px" target="_blank">-->
+<!--                              Transient Tax Ordinance-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                      <li class="bulletList">-->
+<!--                        <a  class="text-primary" href="https://drive.google.com/file/d/1yhp5vkiYmSYsm6GezLM5WCPeLCL41IhJ/view?usp=sharing" width="800px" height="2100px" target="_blank">-->
+<!--                          Transient Tax Form-->
+<!--                        </a>-->
+<!--                      </li>-->
+<!--                        <li class="bulletList">-->
+<!--                          <a  class="text-primary" href="../../assets/documents/Trash%20Ordinance.pdf" width="800px" height="2100px" target="_blank">Trash Ordinance</a>-->
+<!--                        </li>-->
+<!--                        <li class="bulletList">-->
+<!--                            <a  class="text-primary" href="../../assets/documents/ORDINANCE_173_WATER_SYSTEM_ORDINANCE.pdf" width="800px" height="2100px" target="_blank">Water System </a>-->
+<!--                        </li>-->
+<!--                        <li class="bulletList">-->
+<!--                            <a  class="text-primary" href="../../assets/documents/ZONING_ORDINANCES.pdf" width="800px" height="2100px" target="_blank">Zoning Ordinance</a>-->
+<!--                        </li>-->
+
+                      <li class="bulletList" *ngFor="let code of codes">
+                        <a class="text-primary" [href]="code.link" target="_blank" width="800px" height="2100px">{{code.title}}</a>
                       </li>
-                        <li class="bulletList">
-                          <a  class="text-primary" href="../../assets/documents/Trash%20Ordinance.pdf" width="800px" height="2100px" target="_blank">Trash Ordinance</a>
-                        </li>
-                        <li class="bulletList">
-                            <a  class="text-primary" href="../../assets/documents/ORDINANCE_173_WATER_SYSTEM_ORDINANCE.pdf" width="800px" height="2100px" target="_blank">Water System </a>
-                        </li>
-                        <li class="bulletList">
-                            <a  class="text-primary" href="../../assets/documents/ZONING_ORDINANCES.pdf" width="800px" height="2100px" target="_blank">Zoning Ordinance</a>
-                        </li>
                     </ul>
 
                     <h4>Further Questions</h4>
