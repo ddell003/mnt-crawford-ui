@@ -35,13 +35,13 @@
   "town_council": {
     "page_name": "Town Council",
     "members": [
-      {"name":  "Neal Dillard", "role":  "Mayor"},
-      {"name":  "Dennis Driver", "role":  "Vice Mayor"},
+      {"name":  "Dennis Driver", "role":  "Mayor"},
+      {"name":  "Tasha Hoover", "role":  "Vice Mayor"},
       {"name":  "Toni Ray", "role":  "Council Member"},
       {"name":  "Bobby Taylor", "role":  "Council Member"},
       {"name":  "Alfred Cook", "role":  "Council Member"},
-      {"name":  "Tasha Hoover", "role":  "Council Member"},
-      {"name":  "Kathleen Campbell", "role":  "Council Member"}
+      {"name":  "Kathleen Campbell", "role":  "Council Member"},
+      {"name":  "Zan Erksine", "role":  "Council Member"}
     ],
     "sections": [
       {
