@@ -21,8 +21,12 @@ export class OrdinancesComponent implements OnInit {
       link: 'https://drive.google.com/file/d/1nfK6D2yiIzg6dOV_NQpyPjgjKeM8O4wZ/view?usp=sharing',
     },
     {
+      title: 'Business License',
+      link: 'https://drive.google.com/file/d/1Dw9a8HOE7v4JksIvlWJROa722NvEBgLN/view?usp=sharing',
+    },
+    {
       title: 'Chapter 50 Taxation',
-      link: 'https://drive.google.com/file/d/1Qh9Yv-zyc6Q4QRwRMjYqNBR2TSaj7bWS/view?usp=sharing',
+      link: 'https://drive.google.com/file/d/1RoylzjVUI29Aeg5h-2VPfGcqm34KSTSr/view?usp=sharing',
     },
     {
       title: 'Chapter 54 - Law Enforcement',
@@ -35,6 +39,10 @@ export class OrdinancesComponent implements OnInit {
     {
       title: 'Chapter 170 Article 6 - Signs',
       link: 'https://drive.google.com/file/d/1bAQHY1lmFAwUlxNMkiRe-O5d-1Tn18_j/view?usp=sharing',
+    },
+    {
+      title: 'Chapter 170 Article 12 - General Provisions',
+      link: 'https://drive.google.com/file/d/1g07_l8iUQxSFtWMWelpoAAnpqasr9BI7/view?usp=sharing',
     },
     {
       title: 'Noise Ordinance',
