@@ -22,6 +22,10 @@
     cursor: pointer;
 }
 
+.header-area .faith-main-menu .classy-navbar .classynav ul li .nav-menu-button {
+    width: 100%;
+}
+
 .nav-menu-button:hover,
 .nav-menu-button:focus {
     color: #ffffff;
@@ -33,11 +37,13 @@
     background-color: #00c8e6;
 }
 
-.breakpoint-off .classynav ul li.open > .dropdown,
-.breakpoint-off .classynav ul li:focus-within > .dropdown {
+.header-area .faith-main-menu .breakpoint-off .classynav ul li.open > .dropdown,
+.header-area .faith-main-menu .breakpoint-off .classynav ul li:focus-within > .dropdown {
     opacity: 1;
     visibility: visible;
     top: 90%;
+    display: block;
+    pointer-events: auto;
 }
 
 @media only screen and (max-width: 991px) {
@@ -48,7 +54,11 @@
         text-align: left;
     }
 
-    .breakpoint-on .classynav ul li.open > .dropdown {
-        display: block;
+    .header-area .faith-main-menu .breakpoint-on .classynav ul li.open > .dropdown,
+    .header-area .faith-main-menu .breakpoint-on .classynav ul li:focus-within > .dropdown {
+        display: block !important;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
     }
 }

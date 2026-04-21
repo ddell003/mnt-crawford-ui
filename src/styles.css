@@ -50,6 +50,14 @@ a:focus {
   font-weight: 500;
   font-size: 16px; }
 
+main p a,
+main li a,
+main address a,
+.footer-area a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -85,6 +93,82 @@ iframe:focus-visible,
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+.page-header-banner {
+  background-color: #003030;
+  min-height: 200px;
+}
+
+.page-header-banner .title {
+  color: #ffffff;
+}
+
+.page-section-title {
+  color: #0f5d63;
+}
+
+.page-intro-text {
+  font-size: 1rem;
+  color: #3f3f3f;
+}
+
+.hero-title-text {
+  font-family: 'Courgette', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 4rem;
+  line-height: 1.15;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-title-text {
+    font-size: 2.75rem;
+  }
+}
+
+.contact-address {
+  color: #ffffff;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.stacked-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.btn-info,
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-warning,
+.btn-danger {
+  color: #ffffff !important;
+  background-color: #005f73 !important;
+  border-color: #005f73 !important;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-success:hover,
+.btn-success:focus,
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #0a3d48 !important;
+  border-color: #0a3d48 !important;
+}
+
+.text-primary,
+a.text-primary {
+  color: #0b5cab !important;
 }
 
 ul,

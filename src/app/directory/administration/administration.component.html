@@ -1,4 +1,4 @@
-<div class="" style="background-color: #003030; height: 200px">
+<div class="page-header-banner">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 col-md-12">
@@ -22,10 +22,10 @@
 
 
 
-                    <h2>Administrative Contacts</h2>
+                    <h2 class="page-section-title">Administrative Contacts</h2>
                     <ul class="personnel">
                       <li class="bulletList" *ngFor="let user of admins">
-                        {{user.name}} - {{user.role}}{{(user.email !=="")? ' - '+user.email:''}}{{(user.phone !=="")? ' - '+user.phone:''}}
+                        <strong>{{user.name}}</strong> - {{user.role}}<span *ngIf="user.email"> - <a [href]="getEmailHref(user.email)">{{getDisplayEmail(user.email)}}</a></span><span *ngIf="user.phone"> - <a [href]="getPhoneHref(user.phone)">{{user.phone}}</a></span>
                       </li>
 
                     </ul>
@@ -50,6 +50,4 @@
 
     </div>
 </section>
-
-
 

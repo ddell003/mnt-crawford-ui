@@ -1,4 +1,4 @@
-<div class="" style="background-color: #003030; height: 200px">
+<div class="page-header-banner">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
       <div class="col-12 col-md-12">
@@ -18,11 +18,11 @@
       <div class="col-12 col-md-12 single-ministry mb-100">
         <div class="row">
           <div class="col-12 col-md-6">
-            <h2>{{title}}</h2>
-            <p>Click on the links to view!</p>
+            <h2 class="page-section-title">{{title}}</h2>
+            <p class="page-intro-text">Open the links below for hearing notices, packets, and related documents.</p>
             <ul style="padding-left:15px">
               <li class="bulletList" *ngFor="let event of events">
-                <h5 class="text-primary">{{event.name}}</h5>
+                <h3 class="text-primary h5">{{event.name}}</h3>
                 <p *ngIf="event.date != ''">{{event.date}}</p>
                 <div *ngFor="let p of event.text">
                   <p>{{p}}</p>
@@ -51,5 +51,4 @@
 
   </div>
 </section>
-
 

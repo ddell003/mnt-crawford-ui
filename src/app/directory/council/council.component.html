@@ -1,4 +1,4 @@
-<div class="" style="background-color: #003030; height: 200px">
+<div class="page-header-banner">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 col-md-12">
@@ -19,7 +19,7 @@
             <div class="col-12 col-md-12 single-ministry mb-100">
                 <div class="row">
                 <div class="col-12 col-md-7">
-                    <h2>Town Council</h2>
+                    <h2 class="page-section-title">Town Council</h2>
 
                     <ul style="padding-left:15px" class="personnel">
                         <li *ngFor="let user of townCouncil">{{user.name}} &#45; {{user.role}}</li>
@@ -27,7 +27,7 @@
                   <hr>
 
                     <div *ngFor="let section of sections">
-                      <h3>{{section.title}}</h3>
+                      <h3 class="page-section-title">{{section.title}}</h3>
                       <p *ngFor="let p of section.paragraphs">{{p}}</p>
                     </div>
                     <br>
@@ -47,5 +47,4 @@
 
     </div>
 </section>
-
 

@@ -1,17 +1,17 @@
 <!-- ##### Search Wrapper Start ##### -->
 
-<div class="search-wrapper d-flex align-items-center justify-content-center bg-img foo-bg-overlay" style="background-image: url('assets/img/townhall.png');" aria-label="Site search" role="search">
-    <button class="close--icon" type="button" aria-label="Close search">
+<div class="search-wrapper d-flex align-items-center justify-content-center bg-img foo-bg-overlay" style="background-image: url('assets/img/townhall.png');" aria-hidden="true" role="presentation">
+    <button class="close--icon" type="button" aria-label="Close search" tabindex="-1">
         <i class="fa fa-times" aria-hidden="true"></i>
     </button>
     <!-- Logo -->
-    <a routerLink="/" class="search-logo" aria-label="Mount Crawford home"></a>
+    <a routerLink="/" class="search-logo" aria-label="Mount Crawford home" tabindex="-1"></a>
     <!-- Search Form -->
     <div class="search-form">
         <form>
             <label class="sr-only" for="search">Search the Mount Crawford website</label>
-            <input type="search" name="search" id="search" placeholder="Enter keywords">
-            <button type="submit" aria-label="Submit search"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <input type="search" name="search" id="search" placeholder="Enter keywords" disabled tabindex="-1">
+            <button type="submit" aria-label="Submit search" disabled tabindex="-1"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
     </div>
 </div>
@@ -54,7 +54,9 @@
                                   aria-haspopup="true"
                                   [attr.aria-expanded]="isMenuExpanded('announcements')"
                                   aria-controls="announcements-menu"
-                                  (click)="toggleMenu('announcements')">
+                                  (click)="toggleMenu('announcements')"
+                                  (keydown.enter)="toggleMenu('announcements')"
+                                  (keydown.space)="toggleMenu('announcements')">
                                   Announcements ({{totalAnnouncements}})
                                 </button>
                                 <ul class="dropdown" id="announcements-menu" style="width:200px;">
@@ -71,7 +73,9 @@
                                       aria-haspopup="true"
                                       [attr.aria-expanded]="isMenuExpanded('services')"
                                       aria-controls="services-menu"
-                                      (click)="toggleMenu('services')">
+                                      (click)="toggleMenu('services')"
+                                      (keydown.enter)="toggleMenu('services')"
+                                      (keydown.space)="toggleMenu('services')">
                                       Services
                                     </button>
                                     <ul class="dropdown" id="services-menu">
@@ -90,7 +94,9 @@
                                       aria-haspopup="true"
                                       [attr.aria-expanded]="isMenuExpanded('reference')"
                                       aria-controls="reference-menu"
-                                      (click)="toggleMenu('reference')">
+                                      (click)="toggleMenu('reference')"
+                                      (keydown.enter)="toggleMenu('reference')"
+                                      (keydown.space)="toggleMenu('reference')">
                                       Reference
                                     </button>
                                     <ul class="dropdown dropdownWide" id="reference-menu" style="width:200px;">
@@ -112,7 +118,9 @@
                                       aria-haspopup="true"
                                       [attr.aria-expanded]="isMenuExpanded('directory')"
                                       aria-controls="directory-menu"
-                                      (click)="toggleMenu('directory')">
+                                      (click)="toggleMenu('directory')"
+                                      (keydown.enter)="toggleMenu('directory')"
+                                      (keydown.space)="toggleMenu('directory')">
                                       Directory
                                     </button>
                                     <ul class="dropdown" id="directory-menu" style="width:200px;">

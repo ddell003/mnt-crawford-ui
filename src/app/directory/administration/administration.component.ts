@@ -16,4 +16,17 @@ export class AdministrationComponent implements OnInit {
     this.admins = jsonBoards.town_admin.members;
   }
 
+  getEmailHref(email: string): string {
+    return `mailto:${this.getDisplayEmail(email)}`;
+  }
+
+  getDisplayEmail(email: string): string {
+    return email ? email.trim().replace(/\.$/, '') : '';
+  }
+
+  getPhoneHref(phone: string): string {
+    const digits = phone ? phone.replace(/\D/g, '') : '';
+    return digits ? `tel:+1${digits}` : '';
+  }
+
 }
