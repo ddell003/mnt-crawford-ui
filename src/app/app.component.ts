@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {Router, NavigationEnd} from '@angular/router'
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 declare let gtag: Function;
 
@@ -10,6 +11,19 @@ declare let gtag: Function;
 })
 export class AppComponent {
   title = 'st-pauls';
+
+  constructor(private router: Router) {
+    this.router.events
+      .pipe(filter((event): event is NavigationEnd => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.setTimeout(() => {
+          const mainContent = document.getElementById('main-content');
+          if (mainContent) {
+            mainContent.focus();
+          }
+        }, 0);
+      });
+  }
 
   /*constructor(public router: Router){   
     this.router.events.subscribe(event => {

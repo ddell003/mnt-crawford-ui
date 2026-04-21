@@ -7,7 +7,7 @@ import jsonEvents from '../../assets/content/announcements.json';
   styleUrls: ['./navagation.component.css']
 })
 export class NavagationComponent implements OnInit {
-
+  expandedMenu: string | null = null;
   bidCount = 0;
   eventCount = 0;
   hearingsCount = 0;
@@ -19,6 +19,18 @@ export class NavagationComponent implements OnInit {
 
   ngOnInit(): void {
     this.setEvents();
+  }
+
+  toggleMenu(menu: string): void {
+    this.expandedMenu = this.expandedMenu === menu ? null : menu;
+  }
+
+  isMenuExpanded(menu: string): boolean {
+    return this.expandedMenu === menu;
+  }
+
+  closeMenus(): void {
+    this.expandedMenu = null;
   }
 
   setEvents(): void {

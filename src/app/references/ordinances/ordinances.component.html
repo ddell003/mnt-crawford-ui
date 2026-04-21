@@ -55,7 +55,7 @@
 <!--                        </li>-->
 
                       <li class="bulletList" *ngFor="let code of codes">
-                        <a class="text-primary" [href]="code.link" target="_blank" width="800px" height="2100px">{{code.title}}</a>
+                        <a class="text-primary" [href]="code.link" target="_blank" rel="noopener noreferrer" width="800px" height="2100px">{{code.title}}<span class="sr-only">, opens in a new tab</span></a>
                       </li>
                     </ul>
 
@@ -65,7 +65,7 @@
 
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="../../../assets/img/town_w_mnt.jpg" alt="">
+                    <img src="../../../assets/img/town_w_mnt.jpg" alt="View of Mount Crawford">
                 </div>
             </div>
 
@@ -77,6 +77,5 @@
 
     </div>
 </section>
-
 
 

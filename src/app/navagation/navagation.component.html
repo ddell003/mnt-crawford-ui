@@ -1,16 +1,17 @@
 <!-- ##### Search Wrapper Start ##### -->
 
-<div class="search-wrapper d-flex align-items-center justify-content-center bg-img foo-bg-overlay" style="background-image: url('assets/img/townhall.png');">
-    <div class="close--icon">
-        <i class="fa fa-times"></i>
-    </div>
+<div class="search-wrapper d-flex align-items-center justify-content-center bg-img foo-bg-overlay" style="background-image: url('assets/img/townhall.png');" aria-label="Site search" role="search">
+    <button class="close--icon" type="button" aria-label="Close search">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
     <!-- Logo -->
-    <a href="" class="search-logo"><img src="" alt=""></a>
+    <a routerLink="/" class="search-logo" aria-label="Mount Crawford home"></a>
     <!-- Search Form -->
     <div class="search-form">
-        <form action="#" method="get">
-            <input type="search" name="search" id="search" placeholder="Enter Your Keywords">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <form>
+            <label class="sr-only" for="search">Search the Mount Crawford website</label>
+            <input type="search" name="search" id="search" placeholder="Enter keywords">
+            <button type="submit" aria-label="Submit search"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
     </div>
 </div>
@@ -23,10 +24,10 @@
         <div class="classy-nav-container breakpoint-off">
             <div class="container">
                 <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="faithNav">
+                <nav class="classy-navbar justify-content-between" id="faithNav" aria-label="Primary">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href=""><img src="../../assets/img/mntLogo.jpg" alt="" style="font-family: Cabin, Helvetica, Arial;" class="img-circle d-none d-sm-inline">Mount Crawford</a>
+                    <a class="nav-brand" routerLink="/" (click)="closeMenus()"><img src="../../assets/img/mntLogo.jpg" alt="" aria-hidden="true" style="font-family: Cabin, Helvetica, Arial;" class="img-circle d-none d-sm-inline">Mount Crawford</a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -45,43 +46,79 @@
                         <div class="classynav">
                             <ul>
 
-                                <li><a routerLink="/bids">Bids ({{bidCount}})</a></li>
-                              <li><a href="#">Announcements ({{totalAnnouncements}})</a>
-                                <ul class="dropdown" style="width:200px;">
-                                  <li><a routerLink="/events">Events ({{eventCount}})</a></li>
-                                  <li><a routerLink="/hearings">Hearings ({{hearingsCount}})</a></li>
-                                  <li><a routerLink="/news">News</a></li>
-                                  <li><a routerLink="/announcements">Notices ({{noticeCount}})</a></li>
+                                <li><a routerLink="/bids" (click)="closeMenus()">Bids ({{bidCount}})</a></li>
+                              <li class="has-down" [class.open]="isMenuExpanded('announcements')">
+                                <button
+                                  type="button"
+                                  class="nav-menu-button"
+                                  aria-haspopup="true"
+                                  [attr.aria-expanded]="isMenuExpanded('announcements')"
+                                  aria-controls="announcements-menu"
+                                  (click)="toggleMenu('announcements')">
+                                  Announcements ({{totalAnnouncements}})
+                                </button>
+                                <ul class="dropdown" id="announcements-menu" style="width:200px;">
+                                  <li><a routerLink="/events" (click)="closeMenus()">Events ({{eventCount}})</a></li>
+                                  <li><a routerLink="/hearings" (click)="closeMenus()">Hearings ({{hearingsCount}})</a></li>
+                                  <li><a routerLink="/news" (click)="closeMenus()">News</a></li>
+                                  <li><a routerLink="/announcements" (click)="closeMenus()">Notices ({{noticeCount}})</a></li>
                                 </ul>
                               </li>
-                                <li><a href="#">Services</a>
-                                    <ul class="dropdown">
-                                        <li><a routerLink="services/emergency">Emergency Services</a></li>
-                                        <li><a routerLink="services/facilities">Reserving Facilities</a></li>
-                                        <li><a routerLink="services/trash">Trash Service</a></li>
-                                        <li><a routerLink="/services/water">Water &#38; Sewer</a></li>
-                                        <li><a href="https://mountcrawford.info/">Payment Portal</a></li>
+                                <li class="has-down" [class.open]="isMenuExpanded('services')">
+                                    <button
+                                      type="button"
+                                      class="nav-menu-button"
+                                      aria-haspopup="true"
+                                      [attr.aria-expanded]="isMenuExpanded('services')"
+                                      aria-controls="services-menu"
+                                      (click)="toggleMenu('services')">
+                                      Services
+                                    </button>
+                                    <ul class="dropdown" id="services-menu">
+                                        <li><a routerLink="services/emergency" (click)="closeMenus()">Emergency Services</a></li>
+                                        <li><a routerLink="services/facilities" (click)="closeMenus()">Reserving Facilities</a></li>
+                                        <li><a routerLink="services/trash" (click)="closeMenus()">Trash Service</a></li>
+                                        <li><a routerLink="/services/water" (click)="closeMenus()">Water &#38; Sewer</a></li>
+                                        <li><a href="https://mountcrawford.info/" target="_blank" rel="noopener noreferrer" aria-label="Payment portal, opens in a new tab">Payment Portal<span class="sr-only">, opens in a new tab</span></a></li>
 
                                     </ul>
                                 </li>
-                                <li><a href="#">Reference</a>
-                                    <ul class="dropdown dropdownWide" style="width:200px;">
-                                        <li><a href="../../assets/documents/2023-2024-BUDGET.pdf" target="_blank">Budget</a></li>
-                                        <li><a routerLink="references/building">Building &#38; Construction</a></li>
-                                        <li><a routerLink="references/licenses">Business Licenses</a></li>
-                                        <li><a routerLink="references/ordinances">Codes &#38; Ordinances</a></li>
-                                        <li><a href="../../assets/documents/Comprehensive_Plan.pdf" target="_blank">Comprehensive Plan</a></li>
-                                        <li><a routerLink="references/maps">Maps</a></li>
-                                        <li><a routerLink="references/property_tax">Personal Property Taxes</a></li>
-                                        <li><a routerLink="references/real_estate_tax">Real Estate Taxes</a></li>
-                                      <li><a href="../../assets/documents/Urban_dev_eval.pdf" target="_blank">Urban Development Eval</a></li>
+                                <li class="has-down" [class.open]="isMenuExpanded('reference')">
+                                    <button
+                                      type="button"
+                                      class="nav-menu-button"
+                                      aria-haspopup="true"
+                                      [attr.aria-expanded]="isMenuExpanded('reference')"
+                                      aria-controls="reference-menu"
+                                      (click)="toggleMenu('reference')">
+                                      Reference
+                                    </button>
+                                    <ul class="dropdown dropdownWide" id="reference-menu" style="width:200px;">
+                                        <li><a href="../../assets/documents/2023-2024-BUDGET.pdf" target="_blank" rel="noopener noreferrer">Budget<span class="sr-only">, opens in a new tab</span></a></li>
+                                        <li><a routerLink="references/building" (click)="closeMenus()">Building &#38; Construction</a></li>
+                                        <li><a routerLink="references/licenses" (click)="closeMenus()">Business Licenses</a></li>
+                                        <li><a routerLink="references/ordinances" (click)="closeMenus()">Codes &#38; Ordinances</a></li>
+                                        <li><a href="../../assets/documents/Comprehensive_Plan.pdf" target="_blank" rel="noopener noreferrer">Comprehensive Plan<span class="sr-only">, opens in a new tab</span></a></li>
+                                        <li><a routerLink="references/maps" (click)="closeMenus()">Maps</a></li>
+                                        <li><a routerLink="references/property_tax" (click)="closeMenus()">Personal Property Taxes</a></li>
+                                        <li><a routerLink="references/real_estate_tax" (click)="closeMenus()">Real Estate Taxes</a></li>
+                                      <li><a href="../../assets/documents/Urban_dev_eval.pdf" target="_blank" rel="noopener noreferrer">Urban Development Evaluation<span class="sr-only">, opens in a new tab</span></a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Directory</a>
-                                    <ul class="dropdown" style="width:200px;">
-                                        <li><a routerLink="directory/board">Boards &#38; Commissions</a></li>
-                                        <li><a  routerLink="directory/council">Town Council</a></li>
-                                        <li><a  routerLink="directory/administration">Town Administration</a></li>
+                                <li class="has-down" [class.open]="isMenuExpanded('directory')">
+                                    <button
+                                      type="button"
+                                      class="nav-menu-button"
+                                      aria-haspopup="true"
+                                      [attr.aria-expanded]="isMenuExpanded('directory')"
+                                      aria-controls="directory-menu"
+                                      (click)="toggleMenu('directory')">
+                                      Directory
+                                    </button>
+                                    <ul class="dropdown" id="directory-menu" style="width:200px;">
+                                        <li><a routerLink="directory/board" (click)="closeMenus()">Boards &#38; Commissions</a></li>
+                                        <li><a  routerLink="directory/council" (click)="closeMenus()">Town Council</a></li>
+                                        <li><a  routerLink="directory/administration" (click)="closeMenus()">Town Administration</a></li>
                                     </ul>
                                 </li>
 
@@ -89,7 +126,7 @@
 
                             <!-- Donate Button -->
                             <div class="donate-btn">
-                                <a href="">Home</a>
+                                <a routerLink="/" (click)="closeMenus()">Home</a>
                             </div>
 
                         </div>
@@ -100,4 +137,3 @@
         </div>
     </div>
 </header>
-

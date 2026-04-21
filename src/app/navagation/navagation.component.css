@@ -2,3 +2,53 @@
     width: 200px;
    color:blue;
 }
+
+.close--icon {
+    background: transparent;
+    border: 0;
+    color: #ffffff;
+}
+
+.nav-menu-button {
+    padding: 0 15px;
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #232323;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.nav-menu-button:hover,
+.nav-menu-button:focus {
+    color: #ffffff;
+    background-color: #00c8e6;
+}
+
+.nav-menu-button[aria-expanded="true"] {
+    color: #ffffff;
+    background-color: #00c8e6;
+}
+
+.breakpoint-off .classynav ul li.open > .dropdown,
+.breakpoint-off .classynav ul li:focus-within > .dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 90%;
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-menu-button {
+        width: 100%;
+        height: 38px;
+        line-height: 38px;
+        text-align: left;
+    }
+
+    .breakpoint-on .classynav ul li.open > .dropdown {
+        display: block;
+    }
+}

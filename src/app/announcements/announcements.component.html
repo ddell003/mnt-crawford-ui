@@ -29,7 +29,7 @@
                         </div>
                         <div style="display: flex">
                           <div *ngFor="let btn of event.buttons" style="margin-left: 3px">
-                            <a [href]="btn.link" target="_blank" [class]="'btn btn-'+btn.color">{{btn.title}}</a>
+                            <a [href]="btn.link" target="_blank" rel="noopener noreferrer" [class]="'btn btn-'+btn.color">{{btn.title}}<span class="sr-only">, opens in a new tab</span></a>
                           </div>
                         </div>
 
@@ -38,7 +38,7 @@
 
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="../../../assets/img/town_w_mnt.jpg" alt="">
+                    <img src="../../../assets/img/town_w_mnt.jpg" alt="View of Mount Crawford">
                 </div>
             </div>
 
@@ -50,6 +50,5 @@
 
     </div>
 </section>
-
 
 
