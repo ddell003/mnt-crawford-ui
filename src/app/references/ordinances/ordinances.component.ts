@@ -77,8 +77,8 @@ export class OrdinancesComponent implements OnInit {
       link: '../../assets/documents/Trash%20Ordinance.pdf',
     },
     {
-      title: 'Water System',
-      link: '../../assets/documents/ORDINANCE_173_WATER_SYSTEM_ORDINANCE.pdf',
+      title: 'Water System - Chapter 173',
+      link: 'https://drive.google.com/file/d/1lw6gzBG4luX_0NqCRmh4nwkTvq8PPbb7/view?usp=sharing',
     },
     {
       title: 'Zoning - Chapter 170 ',

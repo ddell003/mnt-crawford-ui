@@ -21,12 +21,12 @@
         ]
       },
       {
-        "name": "Summerfest Vendor Application ",
-        "date": "Sat. May 23, 2026, from 9am-1pm",
+        "name": "Fall Festival  Vendor Application ",
+        "date": "Sat. September 19, 2026, from 9am-1pm",
         "buttons": [
           {
             "title": "Fill out the vendor form",
-            "link": "https://drive.google.com/file/d/19aNLWMILtBK4U0cA9lAPPJ7LdszqBaR0/view?usp=sharing"
+            "link": "https://drive.google.com/file/d/1o1MIXTN6KDxrkDVitbLXUSdYVLOfsy6W/view?usp=sharing"
           }
         ],
         "text": [
@@ -95,17 +95,6 @@
         "text": [
           "line 1 text",
           "line 2 text"
-        ]
-      },
-      {
-        "name": " 2026-2027 Budget public hearing",
-        "date": "Monday, May 11, 2026, at 7 pm, at the Town Hall, 779\nS. Main Street, Mt. Crawford,",
-        "buttons": [
-          {
-            "title": "More info",
-            "link": "https://drive.google.com/file/d/1gAYl6v4Bw292Kydeg5piL381XH_04tQw/view?usp=sharing",
-            "color": "info"
-          }
         ]
       }
     ]
