@@ -18,10 +18,13 @@ Run `npm run build` for a development build or `npm run build:production` for a 
 ## Running unit tests
 
 Run `npm test` to execute the Karma/Jasmine unit tests.
+or `npm test -- --watch=false --browsers=ChromeHeadless`
+
 
 ## Running end-to-end tests
 
-Install the local Chromium test browser once with `npx playwright install chromium`, then run `npm run e2e`.
+Install the local Chromium test browser once with `npx playwright install chromium`, then run `npm run e2e`. or `npm run e2e -- --reporter=line`
+
 
 ## Linting
 
