@@ -1,50 +1,56 @@
 <div class="page-header-banner">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12 col-md-12">
-                <div class="breadcumb-text">
-                    <h1 class="connect-title title">Town Council
-                    </h1>
-                </div>
-            </div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-md-12">
+        <div class="breadcumb-text">
+          <h1 class="connect-title title">Town Council
+          </h1>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <section class="ministries-area section-padding-50-0">
-    <div class="container">
+  <div class="container">
 
+    <div class="row">
+
+      <div class="col-12 col-md-12 single-ministry mb-100">
         <div class="row">
+          <div class="col-12 col-md-7">
+            <h2 class="page-section-title">Town Council</h2>
 
-            <div class="col-12 col-md-12 single-ministry mb-100">
-                <div class="row">
-                <div class="col-12 col-md-7">
-                    <h2 class="page-section-title">Town Council</h2>
+            <ul style="padding-left:15px" class="personnel">
+              @for (user of townCouncil; track user) {
+                <li>{{user.name}} &#45; {{user.role}}</li>
+              }
+            </ul>
+            <hr>
 
-                    <ul style="padding-left:15px" class="personnel">
-                        <li *ngFor="let user of townCouncil">{{user.name}} &#45; {{user.role}}</li>
-                    </ul>
-                  <hr>
-
-                    <div *ngFor="let section of sections">
-                      <h3 class="page-section-title">{{section.title}}</h3>
-                      <p *ngFor="let p of section.paragraphs">{{p}}</p>
-                    </div>
-                    <br>
-                    <h4>Further Questions</h4>
-                    <p>If you have questions or concerns regarding Mt. Crawford town personnel, please email <a href="mailto:townofmountcrawford@gmail.com">townofmountcrawford@gmail.com</a></p>
+              @for (section of sections; track section) {
+                <div>
+                  <h3 class="page-section-title">{{section.title}}</h3>
+                  @for (p of section.paragraphs; track p) {
+                    <p>{{p}}</p>
+                  }
                 </div>
-                <div class="col-12 col-md-5">
-                    <img src="../../../assets/img/main_street.png" alt="Main Street in Mount Crawford">
-                </div>
+              }
+              <br>
+                <h4>Further Questions</h4>
+                <p>If you have questions or concerns regarding Mt. Crawford town personnel, please email <a href="mailto:townofmountcrawford@gmail.com">townofmountcrawford&#64;gmail.com</a></p>
+              </div>
+              <div class="col-12 col-md-5">
+                <img src="../../../assets/img/main_street.png" alt="Main Street in Mount Crawford">
+              </div>
             </div>
 
 
-            </div>
+          </div>
         </div>
 
 
 
-    </div>
-</section>
+      </div>
+    </section>
 

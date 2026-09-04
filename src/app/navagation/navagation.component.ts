@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import jsonEvents from '../../assets/content/announcements.json';
 
 @Component({
-  selector: 'app-navagation',
-  templateUrl: './navagation.component.html',
-  styleUrls: ['./navagation.component.css']
+    selector: 'app-navagation',
+    templateUrl: './navagation.component.html',
+    styleUrls: ['./navagation.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class NavagationComponent implements OnInit {
   expandedMenu: string | null = null;

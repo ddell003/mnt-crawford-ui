@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
-import jQuery from '../../assets/js/bootstrap/bootstrap.min.js';
 import '../../assets/js/active.js';
 
 declare  var jQuery:  any;
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+    selector: 'app-footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class FooterComponent implements OnInit {
 
@@ -19,5 +20,4 @@ export class FooterComponent implements OnInit {
   }
 
 }
-
 

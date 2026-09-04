@@ -21,19 +21,26 @@
             <h2 class="page-section-title">{{title}}</h2>
             <p class="page-intro-text">Open the links below for hearing notices, packets, and related documents.</p>
             <ul style="padding-left:15px">
-              <li class="bulletList" *ngFor="let event of events">
-                <h3 class="text-primary h5">{{event.name}}</h3>
-                <p *ngIf="event.date != ''">{{event.date}}</p>
-                <div *ngFor="let p of event.text">
-                  <p>{{p}}</p>
-                </div>
-                <div style="display: flex; flex-wrap: wrap">
-                  <div *ngFor="let btn of event.buttons" style="margin-left: 3px; margin-bottom: 3px">
-                    <a [href]="btn.link" target="_blank" rel="noopener noreferrer" [class]="'btn btn-'+btn.color">{{btn.title}}<span class="sr-only">, opens in a new tab</span></a>
+              @for (event of events; track event) {
+                <li class="bulletList">
+                  <h3 class="text-primary h5">{{event.name}}</h3>
+                  @if (event.date !== '') {
+                    <p>{{event.date}}</p>
+                  }
+                  @for (p of event.text; track p) {
+                    <div>
+                      <p>{{p}}</p>
+                    </div>
+                  }
+                  <div style="display: flex; flex-wrap: wrap">
+                    @for (btn of event.buttons; track btn) {
+                      <div style="margin-left: 3px; margin-bottom: 3px">
+                        <a [href]="btn.link" target="_blank" rel="noopener noreferrer" [class]="'btn btn-'+btn.color">{{btn.title}}<span class="sr-only">, opens in a new tab</span></a>
+                      </div>
+                    }
                   </div>
-                </div>
-
-              </li>
+                </li>
+              }
 
             </ul>
 
@@ -51,4 +58,3 @@
 
   </div>
 </section>
-

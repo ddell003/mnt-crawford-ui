@@ -1,40 +1,44 @@
 <div class="" style="background-color: #003030; height: 200px">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12 col-md-12">
-                <div class="breadcumb-text">
-                    <h1 class="connect-title title">Boards and Commissions</h1>
-                </div>
-            </div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-md-12">
+        <div class="breadcumb-text">
+          <h1 class="connect-title title">Boards and Commissions</h1>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <section class="ministries-area section-padding-50-0">
-    <div class="container">
+  <div class="container">
 
+    <div class="row">
+      <div class="col-12 col-md-12 single-ministry mb-100">
         <div class="row">
-            <div class="col-12 col-md-12 single-ministry mb-100">
-                <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="boards" *ngFor="let board of boards">
-                        <h2>{{board.board_name}}</h2>
-                        <ul style="padding-left:15px">
-                            <li class="bulletList" *ngFor="let user of board.members"> {{user.name}}</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <img src="../../../assets/img/town_w_mnt.jpg" alt="View of Mount Crawford">
-                </div>
-            </div>
-
-
-            </div>
+          <div class="col-12 col-md-6">
+            @for (board of boards; track board) {
+              <div class="boards">
+                <h2>{{board.board_name}}</h2>
+                <ul style="padding-left:15px">
+                  @for (user of board.members; track user) {
+                    <li class="bulletList"> {{user.name}}</li>
+                  }
+                </ul>
+              </div>
+            }
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="../../../assets/img/town_w_mnt.jpg" alt="View of Mount Crawford">
+          </div>
         </div>
 
 
-
+      </div>
     </div>
+
+
+
+  </div>
 </section>
 

@@ -1,28 +1,28 @@
 # MntCrawfordUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+The Town of Mount Crawford website, built with [Angular](https://angular.dev/) 22 and Angular CLI 22.
+
+## Prerequisites
+
+Use Node.js 22.22.3 or newer (see `.nvmrc`) and npm 8 or newer.
+
+Install dependencies with `npm install`.
 
 ## Development server
-Currently uses NPM version 10
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a development server at `http://localhost:4200/`. The app reloads automatically as source files change.
 
-## Code scaffolding
+## Builds
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run build` for a development build or `npm run build:production` for a production build. Build artifacts are written to `dist/mnt-crawford-ui/`.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `npm test` to execute the Karma/Jasmine unit tests.
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Install the local Chromium test browser once with `npx playwright install chromium`, then run `npm run e2e`.
 
-## Further help
+## Linting
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-https://www.netlify.com/blog/2019/09/17/using-the-angular-builder-for-netlify/
+Run `npm run lint` to lint TypeScript and Angular templates with Angular ESLint.

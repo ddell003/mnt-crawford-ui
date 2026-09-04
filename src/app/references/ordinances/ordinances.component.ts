@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'app-ordinances',
-  templateUrl: './ordinances.component.html',
-  styleUrls: ['./ordinances.component.css']
+    selector: 'app-ordinances',
+    templateUrl: './ordinances.component.html',
+    styleUrls: ['./ordinances.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class OrdinancesComponent implements OnInit {
 

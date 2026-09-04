@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import jsonEvents from '../../assets/content/announcements.json';
 
 @Component({
-  selector: 'app-announcements',
-  templateUrl: './announcements.component.html',
-  styleUrls: ['./announcements.component.css']
+    selector: 'app-announcements',
+    templateUrl: './announcements.component.html',
+    styleUrls: ['./announcements.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class AnnouncementsComponent implements OnInit {
 
-  events = [];
+  events: any[] = [];
   title = 'Notices';
 
   constructor() { }
