@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import jsonEvents from '../../assets/content/announcements.json';
 
 @Component({
-  selector: 'app-bids',
-  templateUrl: './bids.component.html',
-  styleUrls: ['./bids.component.css']
+    selector: 'app-bids',
+    templateUrl: './bids.component.html',
+    styleUrls: ['./bids.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class BidsComponent implements OnInit {
 
-  events = [];
+  events: any[] = [];
   title = 'Bids';
 
   constructor() { }

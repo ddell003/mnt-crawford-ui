@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import jsonBoards from '../../../assets/content/directory.json';
 
 @Component({
-  selector: 'app-council',
-  templateUrl: './council.component.html',
-  styleUrls: ['./council.component.css']
+    selector: 'app-council',
+    templateUrl: './council.component.html',
+    styleUrls: ['./council.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class CouncilComponent implements OnInit {
 
-  townCouncil = [];
-  sections = [];
+  townCouncil: any[] = [];
+  sections: any[] = [];
   constructor() { }
 
   ngOnInit(): void {

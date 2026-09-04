@@ -1,53 +1,59 @@
 <div class="page-header-banner">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-12 col-md-12">
-                <div class="breadcumb-text">
-                    <h1 class="connect-title title">Town Administrators
-                    </h1>
-                </div>
-            </div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 col-md-12">
+        <div class="breadcumb-text">
+          <h1 class="connect-title title">Town Administrators
+          </h1>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <section class="ministries-area section-padding-50-0">
-    <div class="container">
+  <div class="container">
 
+    <div class="row">
+
+      <div class="col-12 col-md-12 single-ministry mb-100">
         <div class="row">
-
-            <div class="col-12 col-md-12 single-ministry mb-100">
-                <div class="row">
-                <div class="col-12 col-md-7">
+          <div class="col-12 col-md-7">
 
 
 
-                    <h2 class="page-section-title">Administrative Contacts</h2>
-                    <ul class="personnel">
-                      <li class="bulletList" *ngFor="let user of admins">
-                        <strong>{{user.name}}</strong> - {{user.role}}<span *ngIf="user.email"> - <a [href]="getEmailHref(user.email)">{{getDisplayEmail(user.email)}}</a></span><span *ngIf="user.phone"> - <a [href]="getPhoneHref(user.phone)">{{user.phone}}</a></span>
-                      </li>
+            <h2 class="page-section-title">Administrative Contacts</h2>
+            <ul class="personnel">
+              @for (user of admins; track user) {
+                <li class="bulletList">
+                  <strong>{{user.name}}</strong> - {{user.role}}@if (user.email) {
+                  <span> - <a [href]="getEmailHref(user.email)">{{getDisplayEmail(user.email)}}</a></span>
+                  }@if (user.phone) {
+                  <span> - <a [href]="getPhoneHref(user.phone)">{{user.phone}}</a></span>
+                }
+              </li>
+            }
 
-                    </ul>
-
-
-                    <br><br>
-                    <h4>Further Questions</h4>
-                    <p>If you have questions or concerns regarding Mt. Crawford town personnel, please email <a href="mailto:townofmountcrawford@gmail.com">townofmountcrawford@gmail.com</a></p>
-
-
-                </div>
-                <div class="col-12 col-md-5">
-                    <img src="../../../assets/img/main_street.png" alt="Main Street in Mount Crawford">
-                </div>
-            </div>
+          </ul>
 
 
-            </div>
+          <br><br>
+          <h4>Further Questions</h4>
+          <p>If you have questions or concerns regarding Mt. Crawford town personnel, please email <a href="mailto:townofmountcrawford@gmail.com">townofmountcrawford&#64;gmail.com</a></p>
+
+
         </div>
-
+        <div class="col-12 col-md-5">
+          <img src="../../../assets/img/main_street.png" alt="Main Street in Mount Crawford">
+        </div>
+      </div>
 
 
     </div>
+  </div>
+
+
+
+</div>
 </section>
 

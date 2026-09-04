@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import jsonEvents from '../../assets/content/announcements.json';
 
 @Component({
-  selector: 'app-hearings',
-  templateUrl: './hearings.component.html',
-  styleUrls: ['./hearings.component.css']
+    selector: 'app-hearings',
+    templateUrl: './hearings.component.html',
+    styleUrls: ['./hearings.component.css'],
+    changeDetection: ChangeDetectionStrategy.Eager,
+    standalone: false
 })
 export class HearingsComponent implements OnInit {
 
-  events = [];
+  events: any[] = [];
   title = 'Hearings';
 
   constructor() { }
